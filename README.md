@@ -9,6 +9,8 @@ This project analyses the bikeshare data collected by the users from washington,
 The data is analysed using python pandas and numpy packages.
 
 The final.py file prompts the user for input of the city name whose data they desire to analyse and then the user is prompted to choose whether to anlyse by month, weekday, both or none.
+
+The file also gives statics of the raw data to help the user to better understand the data to be analysed.
 ### Files used
 1.chicago.csv
 
