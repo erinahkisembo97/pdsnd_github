@@ -113,7 +113,7 @@ def view_data_stats(df):
 
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """ Displays statistics on the most frequent times of travel."""
     try:
         print('\nCalculating The Most Frequent Times of Travel...\n')
         start_time = time.time()
@@ -166,13 +166,13 @@ def station_stats(df):
         # display most frequent combination of start station and end station trip
         df['comb']=df['Start Station'] +' and '+ df['End Station']
         common_comb=df['comb'].mode()[0]
-        print("\nThe most frequent combination of start station and end station respectively:\n" + common_comb)
+        print("\nThe most frequent combination of start station and end station respectively are:\n" + common_comb)
 
         print("\nThis took %s seconds." % (time.time() - start_time))
         print('-'*40)
 
     except Exception as e:
-        print("The station_statsfunction has a problem..")
+        print("The station_stats function has a problem..")
 
 
 def trip_duration_stats(df):
@@ -227,7 +227,7 @@ def user_stats(df):
 
 
 
-        # Display earliest, most recent, and most common year of birth
+        # Display earliest, most recent, and most common year of birth for the bike users
         if 'Birth Year' in df:
             common_birth_year =int(df['Birth Year'].mode()[0])
             print("\nThe most common year of birth was:\n")
